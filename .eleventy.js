@@ -31,6 +31,7 @@ module.exports = function(eleventyConfig) {
       data: "_data",
       output: "_site"
     },
+    pathPrefix: "/mcarc-website/",
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk"

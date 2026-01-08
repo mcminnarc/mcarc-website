@@ -1,8 +1,8 @@
 <header class="site-header">
   <div class="container">
     <div class="header-content">
-      <a href="/" class="site-logo">
-        <img src="/assets/images/mcminnarc_logo.jpg" alt="{{ site.name }} Logo" class="logo-image">
+      <a href="{{ '/' | url }}" class="site-logo">
+        <img src="{{ '/assets/images/mcminnarc_logo.jpg' | url }}" alt="{{ site.name }} Logo" class="logo-image">
         <div class="logo-text">
           <span class="callsign">{{ site.shortName }}</span>
         </div>
@@ -11,7 +11,7 @@
       <nav class="main-nav" aria-label="Main navigation">
         <ul class="nav-list">
           {%- for item in navigation.main %}
-          <li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.text }}</a></li>
+          <li><a href="{{ item.url | url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.text }}</a></li>
           {%- endfor %}
         </ul>
       </nav>
