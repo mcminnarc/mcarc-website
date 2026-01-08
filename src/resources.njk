@@ -10,7 +10,7 @@ title: Resources
 <div class="card-grid">
   {%- for item in navigation.resources %}
   <div class="card">
-    <h3><a href="{{ item.url }}">{{ item.text }}</a></h3>
+    <h3><a href="{{ item.url | url }}">{{ item.text }}</a></h3>
   </div>
   {%- endfor %}
 </div>
