@@ -1,0 +1,53 @@
+---
+layout: base.njk
+title: Weekly Nets
+---
+
+<h1>Weekly Net Schedule</h1>
+
+<p>Join us on the air! Our weekly nets are a great way to test your equipment, practice procedures, and stay connected with fellow hams in the area.</p>
+
+{%- for day in nets.weekly %}
+
+<h2>{{ day.day }} Evening</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Net Name</th>
+      <th>Frequency</th>
+      <th>Tone</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for net in day.nets %}
+    <tr>
+      <td>{{ net.time }}</td>
+      <td><strong>{{ net.name }}</strong></td>
+      <td class="frequency">{{ net.frequency }} MHz {{ net.offset }}</td>
+      <td>{{ net.tone or "Simplex" }}</td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+
+{%- endfor %}
+
+<h2>What to Expect</h2>
+
+<ul>
+  <li><strong>Net Control Station (NCS)</strong> will open the net at the scheduled time</li>
+  <li><strong>Check-ins</strong> are taken in order — just give your callsign when called</li>
+  <li><strong>Traffic</strong> is handled after initial check-ins</li>
+  <li><strong>Announcements</strong> from the club and members</li>
+  <li><strong>Ragchew</strong> time after formal net business</li>
+</ul>
+
+<div class="info-box">
+<strong>New to nets?</strong> Just listen for a few weeks to get familiar with the format, then jump in! Everyone was new once, and our operators are happy to help.
+</div>
+
+<h2>Can't Make the Scheduled Time?</h2>
+
+<p>If you're monitoring the repeater and hear the net in progress, you can still check in as a "late check-in" when the NCS asks for them.</p>

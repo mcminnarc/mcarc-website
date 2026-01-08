@@ -1,0 +1,22 @@
+{
+  "name": "McMinn County Amateur Radio Club",
+  "shortName": "MCARC",
+  "callsign": "KG4FZR",
+  "description": "Amateur Radio Club serving McMinn County, Tennessee",
+  "url": "https://mcminnarc.github.io",
+  "email": "mcminnradio@gmail.com",
+  "phone": "423-506-0225",
+  "contact": "Mike Elkins",
+  "facebook": "https://www.facebook.com/mcminnamateurradio",
+  "mailingList": "http://eepurl.com/Jx7Qv",
+  "meeting": {
+    "day": "2nd Monday",
+    "time": "7:00 PM",
+    "location": "McMinn County Justice Center",
+    "address": "1319 S White St, Athens, TN 37303"
+  },
+  "verse": {
+    "text": "Let no corrupt communication proceed out of your mouth, but that which is good to the use of edifying, that it may minister grace unto the hearers.",
+    "reference": "Ephesians 4:29 (KJV)"
+  }
+}

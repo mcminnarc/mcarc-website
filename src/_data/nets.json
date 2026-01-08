@@ -1,0 +1,42 @@
+{
+  "weekly": [
+    {
+      "day": "Monday",
+      "nets": [
+        {
+          "time": "8:00 PM",
+          "name": "Ladies Net",
+          "frequency": "441.800",
+          "offset": "+",
+          "tone": "141.3"
+        },
+        {
+          "time": "8:30 PM",
+          "name": "McMinn ARC Net",
+          "frequency": "146.820",
+          "offset": "-",
+          "tone": "141.3"
+        }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "nets": [
+        {
+          "time": "7:30 PM",
+          "name": "Meigs County Simplex",
+          "frequency": "145.150",
+          "offset": "",
+          "tone": ""
+        },
+        {
+          "time": "8:30 PM",
+          "name": "Simplex Net",
+          "frequency": "146.490",
+          "offset": "",
+          "tone": ""
+        }
+      ]
+    }
+  ]
+}

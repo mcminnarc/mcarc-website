@@ -1,0 +1,38 @@
+<header class="site-header">
+  <div class="container">
+    <div class="header-content">
+      <a href="/" class="site-logo">
+        <img src="/assets/images/mcminnarc_logo.jpg" alt="{{ site.name }} Logo" class="logo-image">
+        <div class="logo-text">
+          <span class="callsign">{{ site.shortName }}</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          {%- for item in navigation.main %}
+          <li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.text }}</a></li>
+          {%- endfor %}
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+            <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.657 4.343L14.243 5.757M5.757 14.243L4.343 15.657M15.657 15.657L14.243 14.243M5.757 5.757L4.343 4.343" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 10.5C17 14.6421 13.6421 18 9.5 18C5.35786 18 2 14.6421 2 10.5C2 6.35786 5.35786 3 9.5 3C9.67175 3 9.84242 3.00624 10.0117 3.01856C9.37467 3.93421 9 5.04207 9 6.23529C9 9.50971 11.7304 12.2353 15 12.2353C16.1932 12.2353 17.3011 11.8606 18.2167 11.2236C18.2289 11.3929 18.235 11.5635 18.235 11.7353C18.235 11.7353 17 10.5 17 10.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

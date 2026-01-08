@@ -1,0 +1,112 @@
+{
+  "year": 2025,
+  "events": [
+    {
+      "date": "2025-02-22",
+      "name": "Dalton Hamfest",
+      "location": "Dalton, GA",
+      "talkin": "147.135(+) 141.3",
+      "url": "http://w4drc.webstarts.com/"
+    },
+    {
+      "date": "2025-02-28",
+      "endDate": "2025-03-01",
+      "name": "Birmingham Hamfest",
+      "location": "Birmingham, AL",
+      "talkin": "146.88",
+      "url": "http://www.w4cue.com/"
+    },
+    {
+      "date": "2025-03-07",
+      "endDate": "2025-03-08",
+      "name": "Tullahoma Hamfest",
+      "location": "Tullahoma, TN",
+      "talkin": "146.700(-) 114.8",
+      "url": "http://www.qsl.net/mtars"
+    },
+    {
+      "date": "2025-03-15",
+      "name": "Sevier County Hamfest",
+      "location": "Sevierville, TN",
+      "talkin": "146.940",
+      "url": "https://seviercountyars.com/"
+    },
+    {
+      "date": "2025-04-19",
+      "name": "Greeneville Hamfest",
+      "location": "Greenville, TN",
+      "talkin": "145.390(-) 186.2",
+      "url": "http://www.greenevillehamfest.com/"
+    },
+    {
+      "date": "2025-06-07",
+      "name": "Atlanta Hamfest",
+      "location": "Atlanta, GA",
+      "talkin": "146.820(-) 146.2",
+      "url": "http://www.atlantahamfest.org/"
+    },
+    {
+      "date": "2025-06-17",
+      "name": "Knoxville Hamfest",
+      "location": "Knoxville, TN",
+      "talkin": "147.300, 224.500, 444.575",
+      "url": "http://www.w4bbb.org/"
+    },
+    {
+      "date": "2025-07-26",
+      "name": "Waynesville Hamfest",
+      "location": "Waynesville, NC",
+      "talkin": "146.910(-) 91.5",
+      "url": "https://www.wcars-club.org/wcarshamfest.htm"
+    },
+    {
+      "date": "2025-08-16",
+      "endDate": "2025-08-17",
+      "name": "Huntsville Hamfest",
+      "location": "Huntsville, AL",
+      "talkin": "146.940",
+      "url": "http://www.hamfest.org/"
+    },
+    {
+      "date": "2025-10-03",
+      "endDate": "2025-10-04",
+      "name": "Chattanooga Hamfest",
+      "location": "Chattanooga, TN / Ringgold, GA",
+      "talkin": "146.790",
+      "url": "https://www.w4am.net/"
+    },
+    {
+      "date": "2025-11-01",
+      "endDate": "2025-11-02",
+      "name": "Stone Mountain Hamfest",
+      "location": "Lawrenceville, GA",
+      "talkin": "146.82(-) 107.2",
+      "url": "http://www.stonemountainhamfest.com/"
+    }
+  ],
+  "recurring": [
+    {
+      "name": "Cedars of Lebanon",
+      "location": "Lebanon, TN",
+      "talkin": "146.910(-)",
+      "url": "http://smrclub.com/"
+    },
+    {
+      "name": "Middle TN HamQuest",
+      "location": "Wilson County Fairgrounds",
+      "talkin": "147.105(+) 156.7",
+      "url": "https://midtnhamquest.com/"
+    },
+    {
+      "name": "Cullman Hamfest",
+      "location": "Cullman, AL",
+      "talkin": "145.310(-)",
+      "url": "https://cullmanarc.com/hamfest/"
+    }
+  ],
+  "club": {
+    "name": "McMinn County Hamfest",
+    "talkin": "147.060(-) 141.3",
+    "notes": "Watch for announcements!"
+  }
+}

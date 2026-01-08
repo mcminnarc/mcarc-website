@@ -1,0 +1,154 @@
+# Decap CMS Configuration for McMinn ARC Website
+
+# Using Netlify Identity (Git Gateway) for authentication
+# This works with GitHub Pages hosting + Netlify Identity service
+backend:
+  name: git-gateway
+  branch: main
+
+# Editorial workflow: enable drafts and publishing workflow
+# This allows saving drafts before publishing
+publish_mode: editorial_workflow
+
+# Local development backend (uncomment for testing)
+# local_backend: true
+
+# Media uploads
+media_folder: "src/assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+# Content Collections
+collections:
+  # Meeting Minutes
+  - name: "minutes"
+    label: "Meeting Minutes"
+    folder: "src/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "base.njk"}
+      - {label: "Title", name: "title", widget: "string", hint: "e.g., February 2025 Meeting Minutes"}
+      - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD"}
+      - {label: "Tags", name: "tags", widget: "hidden", default: "minutes"}
+      - {label: "Meeting Minutes Content", name: "body", widget: "markdown",
+         hint: "Write the meeting minutes here. Use headings, lists, and formatting as needed.",
+         default: "## Meeting Details\n- **Date:** \n- **Time:** \n- **Location:** McMinn County Courthouse\n\n## Attendees\n\n\n## Topics Discussed\n\n\n## Action Items\n\n\n## Next Meeting\n"}
+
+  # Site Data - Members
+  - name: "members_data"
+    label: "Club Members"
+    files:
+      - label: "Club Roster"
+        name: "members"
+        file: "src/_data/members.json"
+        fields:
+          - label: "Officers"
+            name: "officers"
+            widget: "list"
+            fields:
+              - {label: "Position", name: "position", widget: "string"}
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Callsign", name: "callsign", widget: "string"}
+              - {label: "Email", name: "email", widget: "string", required: false}
+
+          - label: "Lifetime Members"
+            name: "lifetime"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Callsign", name: "callsign", widget: "string"}
+              - {label: "Since", name: "since", widget: "string", required: false}
+
+          - label: "Current Members"
+            name: "current"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Callsign", name: "callsign", widget: "string"}
+
+  # Site Data - Repeaters
+  - name: "repeaters_data"
+    label: "Repeaters"
+    files:
+      - label: "Repeater List"
+        name: "repeaters"
+        file: "src/_data/repeaters.json"
+        fields:
+          - label: "Repeaters"
+            name: "repeaters"
+            widget: "list"
+            fields:
+              - {label: "Frequency", name: "frequency", widget: "string", hint: "e.g., 146.835"}
+              - {label: "Offset", name: "offset", widget: "string", hint: "e.g., -0.600"}
+              - {label: "Tone", name: "tone", widget: "string", hint: "e.g., 100.0 Hz"}
+              - {label: "Location", name: "location", widget: "string"}
+              - {label: "Notes", name: "notes", widget: "text", required: false}
+              - {label: "Status", name: "status", widget: "select", options: ["Operational", "Maintenance", "Offline"]}
+
+  # Site Data - Nets
+  - name: "nets_data"
+    label: "Net Schedule"
+    files:
+      - label: "Weekly Nets"
+        name: "nets"
+        file: "src/_data/nets.json"
+        fields:
+          - label: "Nets"
+            name: "nets"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Day", name: "day", widget: "string"}
+              - {label: "Time", name: "time", widget: "string"}
+              - {label: "Frequency", name: "frequency", widget: "string"}
+              - {label: "Description", name: "description", widget: "text", required: false}
+
+  # Site Data - Events/Hamfests
+  - name: "events_data"
+    label: "Hamfests & Events"
+    files:
+      - label: "Event Calendar"
+        name: "hamfests"
+        file: "src/_data/hamfests.json"
+        fields:
+          - label: "Events"
+            name: "events"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD"}
+              - {label: "Location", name: "location", widget: "string"}
+              - {label: "City", name: "city", widget: "string"}
+              - {label: "State", name: "state", widget: "string"}
+              - {label: "Website", name: "website", widget: "string", required: false}
+              - {label: "Description", name: "description", widget: "text", required: false}
+
+  # Pages
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "src/about.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "base.njk"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Content", name: "body", widget: "markdown"}
+
+      - label: "SkyWARN Page"
+        name: "skywarn"
+        file: "src/skywarn.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "base.njk"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Content", name: "body", widget: "markdown"}
+
+      - label: "License Testing Page"
+        name: "license"
+        file: "src/license.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "base.njk"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Content", name: "body", widget: "markdown"}

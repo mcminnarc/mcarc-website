@@ -1,0 +1,21 @@
+{
+  "name": "mcminnarc-website",
+  "version": "1.0.0",
+  "description": "McMinn County Amateur Radio Club website",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "debug": "DEBUG=Eleventy* eleventy"
+  },
+  "keywords": [
+    "amateur-radio",
+    "ham-radio",
+    "mcminn-county",
+    "tennessee"
+  ],
+  "author": "McMinn County Amateur Radio Club",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

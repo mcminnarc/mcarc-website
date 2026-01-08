@@ -1,0 +1,71 @@
+{
+  "repeaters": [
+    {
+      "callsign": "KG4FZR",
+      "frequency": "146.820",
+      "offset": "-",
+      "tone": "141.3",
+      "location": "Etowah, TN",
+      "status": "operational",
+      "notes": "Main SkyWARN frequency. Thanks to Charlie Satterfield, K4EZK"
+    },
+    {
+      "callsign": "KG4FZR",
+      "frequency": "147.060",
+      "offset": "-",
+      "tone": "141.3",
+      "location": "Athens, TN",
+      "status": "operational",
+      "notes": "Donated by John Fridley, KF4PVQ"
+    },
+    {
+      "callsign": "KG4FZR",
+      "frequency": "442.275",
+      "offset": "+",
+      "tone": "141.3",
+      "location": "Athens, TN",
+      "status": "operational",
+      "notes": "Connected to Wires-X. Thanks to Reed Clayton, W4HRC"
+    },
+    {
+      "callsign": "KG4FZR",
+      "frequency": "443.275",
+      "offset": "+",
+      "tone": "100.0",
+      "location": "Decatur, TN",
+      "status": "operational",
+      "notes": "For Meigs County area"
+    },
+    {
+      "callsign": "KG4FZR",
+      "frequency": "441.800",
+      "offset": "+",
+      "tone": "141.3",
+      "location": "Etowah, TN",
+      "status": "operational",
+      "notes": "Starr Mountain, elevation 2200ft"
+    },
+    {
+      "callsign": "KG4FZR",
+      "frequency": "145.150",
+      "offset": "-",
+      "tone": "141.3",
+      "location": "Decatur, TN",
+      "status": "operational",
+      "notes": "NoPone Ridge"
+    }
+  ],
+  "simplex": [
+    { "frequency": "146.490", "notes": "Local simplex" },
+    { "frequency": "146.520", "notes": "National calling frequency" },
+    { "frequency": "146.580", "notes": "Local simplex" }
+  ],
+  "packet": {
+    "frequency": "145.550",
+    "nodes": [
+      { "callsign": "KG4FZR-10", "type": "WL2K RMS Packet Server" },
+      { "callsign": "KG4FZR-7", "type": "MCARC Digi / APRS Igate" }
+    ],
+    "notes": "TN Homeland Security District 3 packet frequency"
+  }
+}

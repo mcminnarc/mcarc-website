@@ -1,0 +1,40 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3>{{ site.name }}</h3>
+        <p>{{ site.callsign }}</p>
+        <p>Serving McMinn County, Tennessee</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Meetings</h3>
+        <p>{{ site.meeting.day }} at {{ site.meeting.time }}</p>
+        <p>{{ site.meeting.location }}</p>
+        <p>{{ site.meeting.address }}</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        <p>{{ site.phone }}</p>
+        <p><a href="{{ site.facebook }}" target="_blank" rel="noopener">Facebook</a></p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          {%- for item in navigation.resources | slice(0, 4) %}
+          <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; {{ site.year or "2025" }} {{ site.name }}. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/nav.js"></script>

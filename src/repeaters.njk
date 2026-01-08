@@ -1,0 +1,99 @@
+---
+layout: base.njk
+title: Repeater Frequencies
+---
+
+<h1>Repeater Frequencies</h1>
+
+<h2>Club Repeaters</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Callsign</th>
+      <th>Frequency</th>
+      <th>Offset</th>
+      <th>Tone</th>
+      <th>Location</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for rpt in repeaters.repeaters %}
+    <tr>
+      <td class="callsign">{{ rpt.callsign }}</td>
+      <td class="frequency">{{ rpt.frequency }} MHz</td>
+      <td>{{ rpt.offset }}</td>
+      <td>{{ rpt.tone }}</td>
+      <td>{{ rpt.location }}</td>
+      <td class="status-{{ rpt.status }}">{{ rpt.status | upper }}</td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+
+<h2>Repeater Notes</h2>
+
+<ul>
+{%- for rpt in repeaters.repeaters %}
+  <li><strong>{{ rpt.frequency }}</strong> — {{ rpt.notes }}</li>
+{%- endfor %}
+</ul>
+
+<h2>Digital Mode Note</h2>
+
+<div class="info-box">
+If you monitor our repeaters in analog and notice static or garbled talk, it's probably due to someone using the repeater in digital mode. Set the tone mode to "tone sql" to filter out the digital noise while still seeing when the repeater is active.
+</div>
+
+<h2>Simplex Frequencies</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Frequency</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+{%- for freq in repeaters.simplex %}
+    <tr>
+      <td class="frequency">{{ freq.frequency }} MHz</td>
+      <td>{{ freq.notes }}</td>
+    </tr>
+{%- endfor %}
+  </tbody>
+</table>
+
+<h2>Packet Operations</h2>
+
+<p>MCARC is also active on packet frequency <strong>{{ repeaters.packet.frequency }} MHz</strong>.</p>
+
+<p>The club shack operates 24/7:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Callsign</th>
+      <th>Function</th>
+    </tr>
+  </thead>
+  <tbody>
+{%- for node in repeaters.packet.nodes %}
+    <tr>
+      <td class="callsign">{{ node.callsign }}</td>
+      <td>{{ node.type }}</td>
+    </tr>
+{%- endfor %}
+  </tbody>
+</table>
+
+<div class="info-box important">
+<strong>Important:</strong> The KG4FZR-7 DIGI is a WIDEn-N/TNn-N digi and is a limited two-way IGATE. It also gates local severe weather related data to the RF side of APRS.
+</div>
+
+<p>{{ repeaters.packet.notes }}</p>
+
+<h2>Coordination</h2>
+
+<p>All MCARC repeaters are fully coordinated through the <a href="http://www.sera.org/" target="_blank" rel="noopener">Southeastern Repeater Association, Inc.</a></p>

@@ -1,0 +1,21 @@
+{
+  "main": [
+    { "text": "Home", "url": "/" },
+    { "text": "About", "url": "/about/" },
+    { "text": "Repeaters", "url": "/repeaters/" },
+    { "text": "Nets", "url": "/nets/" },
+    { "text": "SkyWARN", "url": "/skywarn/" },
+    { "text": "Events", "url": "/events/" },
+    { "text": "Resources", "url": "/resources/" }
+  ],
+  "resources": [
+    { "text": "Club Members", "url": "/members/" },
+    { "text": "Meeting Minutes", "url": "/minutes/" },
+    { "text": "HAM License", "url": "/license/" },
+    { "text": "Scanner Info", "url": "/scanner/" },
+    { "text": "Handie Talkies", "url": "/hts/" },
+    { "text": "Marine Radio", "url": "/marine/" },
+    { "text": "Trading Post", "url": "/trading/" },
+    { "text": "Documents", "url": "/documents/" }
+  ]
+}

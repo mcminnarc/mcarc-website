@@ -1,0 +1,20 @@
+---
+layout: base.njk
+title: Meeting Minutes
+---
+
+<h1>Meeting Minutes</h1>
+
+<p>Archive of McMinn County Amateur Radio Club meeting minutes.</p>
+
+<h2>Recent Minutes</h2>
+
+<ul>
+{%- for post in collections.minutes %}
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a> — {{ post.date | shortDate }}</li>
+{%- endfor %}
+</ul>
+
+<hr>
+
+<p><em>Minutes are approved at the following month's meeting. If you have questions or corrections, please contact the club secretary.</em></p>

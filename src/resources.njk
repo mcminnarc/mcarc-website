@@ -1,0 +1,48 @@
+---
+layout: base.njk
+title: Resources
+---
+
+<h1>Resources</h1>
+
+<p>Educational materials and helpful information for amateur radio operators.</p>
+
+<div class="card-grid">
+  {%- for item in navigation.resources %}
+  <div class="card">
+    <h3><a href="{{ item.url }}">{{ item.text }}</a></h3>
+  </div>
+  {%- endfor %}
+</div>
+
+<h2>External Resources</h2>
+
+<h3>License Study Materials</h3>
+
+<ul>
+  <li><a href="http://www.arrl.org/getting-your-technician-license" target="_blank" rel="noopener">ARRL License Study</a></li>
+  <li><a href="https://hamstudy.org/" target="_blank" rel="noopener">HamStudy.org</a> — Free practice exams</li>
+  <li><a href="http://www.ncvec.org/" target="_blank" rel="noopener">NCVEC Question Pools</a> — Official question pools for all license classes</li>
+</ul>
+
+<h3>FCC Resources</h3>
+
+<ul>
+  <li><a href="https://wireless2.fcc.gov/UlsApp/UlsSearch/searchLicense.jsp" target="_blank" rel="noopener">FCC Universal Licensing System</a> — License lookup and renewal</li>
+  <li><a href="http://www.mcminnarc.com/helps/TN_Ham_Tag_Form.pdf" target="_blank" rel="noopener">TN Ham License Plate Form</a></li>
+</ul>
+
+<h3>Technical Information</h3>
+
+<ul>
+  <li><a href="http://www.allaboutcircuits.com/" target="_blank" rel="noopener">All About Circuits</a> — Electronics reference</li>
+  <li><a href="http://www.qrz.com" target="_blank" rel="noopener">QRZ.com</a> — Callsign lookup</li>
+  <li><a href="http://www.radioreference.com/" target="_blank" rel="noopener">RadioReference.com</a> — Scanner frequencies</li>
+</ul>
+
+<h3>Other Helpful Sites</h3>
+
+<ul>
+  <li><a href="http://www.sera.org/" target="_blank" rel="noopener">SERA</a> — Southeastern Repeater Association</li>
+  <li><a href="http://www.arrl.org/" target="_blank" rel="noopener">ARRL</a> — American Radio Relay League</li>
+</ul>

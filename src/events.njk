@@ -1,0 +1,71 @@
+---
+layout: base.njk
+title: Events & Hamfests
+---
+
+<h1>Events & Hamfests</h1>
+
+<h2>{{ hamfests.year }} Hamfest Schedule</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Event</th>
+      <th>Location</th>
+      <th>Talk-In</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for event in hamfests.events %}
+    <tr>
+      <td>{{ event.date | dateFormat }}{% if event.endDate %} - {{ event.endDate | dateFormat }}{% endif %}</td>
+      <td><a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.name }}</a></td>
+      <td>{{ event.location }}</td>
+      <td class="frequency">{{ event.talkin }}</td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+
+<h2>McMinn County Hamfest</h2>
+
+<div class="info-box important">
+<strong>{{ hamfests.club.name }}</strong><br>
+Talk-In: <span class="frequency">{{ hamfests.club.talkin }}</span><br>
+{{ hamfests.club.notes }}
+</div>
+
+<h2>Other Regional Events</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Event</th>
+      <th>Location</th>
+      <th>Talk-In</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for event in hamfests.recurring %}
+    <tr>
+      <td><a href="{{ event.url }}" target="_blank" rel="noopener">{{ event.name }}</a></td>
+      <td>{{ event.location }}</td>
+      <td class="frequency">{{ event.talkin }}</td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+
+<h2>Annual Club Events</h2>
+
+<ul>
+  <li><strong>Winter Field Day</strong> — January</li>
+  <li><strong>Field Day</strong> — 4th full weekend of June</li>
+  <li><strong>Chili Supper</strong> — Fall</li>
+  <li><strong>Christmas Dinner</strong> — December</li>
+</ul>
+
+<hr>
+
+<p><em>Dates and details subject to change. Always verify with the sponsoring organization before traveling.</em></p>

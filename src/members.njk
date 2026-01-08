@@ -1,0 +1,54 @@
+---
+layout: base.njk
+title: Club Members
+---
+
+<h1>Club Members</h1>
+
+<p><em>Tip: Press Ctrl+F (Cmd+F on Mac) to search for a specific name or callsign.</em></p>
+
+<h2>Lifetime Members</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Callsign</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for member in members.lifetime %}
+    <tr>
+      <td>{{ member.name }}</td>
+      <td class="callsign">{{ member.callsign }}</td>
+      <td>{% if member.sk %}(SK){% elif member.note %}{{ member.note }}{% endif %}</td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+
+<h2>Current Members</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Callsign</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for member in members.members | sort(false, false, 'name') %}
+    <tr>
+      <td>{{ member.name }}</td>
+      <td class="callsign">{{ member.callsign }}{% if member.note %} <em>({{ member.note }})</em>{% endif %}</td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+
+<hr>
+
+<div class="info-box">
+<strong>Want to become a member?</strong> Come to one of our meetings on the {{ site.meeting.day }} of each month! Meetings are held at {{ site.meeting.time }} at the {{ site.meeting.location }}.
+</div>

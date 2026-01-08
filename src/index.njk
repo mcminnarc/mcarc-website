@@ -1,0 +1,109 @@
+---
+layout: base.njk
+title: Home
+---
+
+<section class="hero">
+  <div class="container">
+    <img src="/assets/images/mcminnarc_logo.jpg" alt="{{ site.name }} Logo" class="hero-logo">
+    <h1>{{ site.name }}</h1>
+    <p class="subtitle">{{ site.callsign }} — Serving McMinn County, Tennessee</p>
+    <div class="verse">
+      <p>"{{ site.verse.text }}"</p>
+      <cite>— {{ site.verse.reference }}</cite>
+    </div>
+  </div>
+</section>
+
+<h2>Upcoming Events</h2>
+
+<div class="upcoming-event">
+  <h3>Come Learn About Amateur Packet Radio – This Saturday!</h3>
+  <p>You're invited to the McMinn County Emergency Operations Center (EOC) to learn about <strong>Packet Radio</strong> with <strong>Bobby Murphy (W4BKX)</strong>, Vice President of the McMinn County Amateur Radio Club.</p>
+  <p>There are a number of great packet radio stations throughout our area, and Bobby will be showing how you can get involved and get connected. There's been a resurgence in packet radio, and it's now easier than ever to get started. Come join us to learn and discuss packet radio!</p>
+  <p><strong>Coffee and donuts will be provided.</strong></p>
+  <div class="event-details">
+    <div class="event-detail-item">
+      <strong>Date:</strong> This Saturday
+    </div>
+    <div class="event-detail-item">
+      <strong>Time:</strong> 9:00 AM – 12:00 PM
+    </div>
+    <div class="event-detail-item">
+      <strong>Location:</strong> McMinn County EOC<br>
+      1107 South Congress Parkway<br>
+      Athens, TN<br>
+      <a href="https://maps.app.goo.gl/VTE1HvUQN1nShrmN8" target="_blank" rel="noopener">View Map</a>
+    </div>
+  </div>
+  <p><em>Hope to see you there!</em></p>
+</div>
+
+<h2>Quick Links</h2>
+<div class="card-grid">
+  <div class="card">
+    <h3><a href="/repeaters/">Repeater Frequencies</a></h3>
+    <p>Local repeater information including frequencies, tones, and locations.</p>
+  </div>
+  <div class="card">
+    <h3><a href="/nets/">Weekly Nets</a></h3>
+    <p>Join our weekly nets for check-ins and conversation.</p>
+  </div>
+  <div class="card">
+    <h3><a href="/skywarn/">SKYWARN</a></h3>
+    <p>Severe weather spotting information and frequencies.</p>
+  </div>
+  <div class="card">
+    <h3><a href="/events/">Hamfests & Events</a></h3>
+    <p>Upcoming hamfests and club events in the region.</p>
+  </div>
+  <div class="card">
+    <h3><a href="/license/">Get Licensed</a></h3>
+    <p>Information about amateur radio license testing.</p>
+  </div>
+  <div class="card">
+    <h3><a href="/members/">Club Members</a></h3>
+    <p>Current membership roster and lifetime members.</p>
+  </div>
+</div>
+
+<h2>Community</h2>
+<div class="card-grid">
+  <div class="card">
+    <h3>Club Meetings</h3>
+    <p><strong>{{ site.meeting.day }}</strong> at <strong>{{ site.meeting.time }}</strong></p>
+    <p>{{ site.meeting.location }}<br>{{ site.meeting.address }}</p>
+    <p><small>Everyone is welcome!</small></p>
+  </div>
+  <div class="card">
+    <h3><a href="https://www.facebook.com/groups/2467262400227869/" target="_blank" rel="noopener">Elmers Corner</a></h3>
+    <p>Get help from experienced hams in our Facebook group.</p>
+  </div>
+  <div class="card">
+    <h3><a href="https://www.facebook.com/groups/173947463838722/" target="_blank" rel="noopener">Digital Modes</a></h3>
+    <p>Discussions about digital amateur radio modes.</p>
+  </div>
+  <div class="card">
+    <h3><a href="{{ site.mailingList }}" target="_blank" rel="noopener">Mailing List</a></h3>
+    <p>Subscribe for club announcements and updates.</p>
+  </div>
+</div>
+
+<h2>Our Sponsors</h2>
+<p>We would like to thank our sponsors for their generous support:</p>
+<div class="sponsors-grid">
+  <div class="sponsor-card">
+    <img src="/assets/images/athens-jiu-jitsu-logo.png" alt="Athens Jiu-Jitsu" class="sponsor-logo">
+  </div>
+  <div class="sponsor-card">
+    <img src="/assets/images/southern-homes-logo.png" alt="Southern Homes" class="sponsor-logo">
+  </div>
+</div>
+
+<h2>Contact Us</h2>
+<p>
+  <strong>{{ site.contact }}</strong><br>
+  Phone: {{ site.phone }}<br>
+  Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+  <a href="{{ site.facebook }}" target="_blank" rel="noopener">Follow us on Facebook</a>
+</p>
