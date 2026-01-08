@@ -65,7 +65,6 @@
     "nodes": [
       { "callsign": "KG4FZR-10", "type": "WL2K RMS Packet Server" },
       { "callsign": "KG4FZR-7", "type": "MCARC Digi / APRS Igate" }
-    ],
-    "notes": "TN Homeland Security District 3 packet frequency"
+    ]
   }
 }
