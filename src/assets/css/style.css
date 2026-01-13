@@ -630,6 +630,33 @@ tbody tr:last-child td {
   min-width: 80px;
 }
 
+/* Presentation Section */
+.presentation-section {
+  margin: var(--space-8) 0;
+}
+
+.presentation-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 75%; /* 4:3 aspect ratio (3/4 = 75%) */
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  border: 2px solid var(--color-border);
+}
+
+.presentation-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 /* Footer */
 .site-footer {
   background: var(--footer-bg);
@@ -856,6 +883,11 @@ pre code {
 
   .upcoming-event h3 {
     font-size: 1.25rem;
+  }
+
+  .presentation-wrapper {
+    max-width: 100%;
+    border-radius: var(--radius-md);
   }
 
   .card-grid {
