@@ -40,7 +40,7 @@ When activated, report:
 3. **Include your location** — use landmarks, road intersections, or GPS coordinates
 4. **Report what YOU observe** — not what you heard elsewhere
 
-## Example Report Format
+### Example Report Format
 
 > "Net Control, this is [CALLSIGN]. I'm at [LOCATION]. I'm observing [WEATHER CONDITION] and the time of this observation was [TIME OF OBSERVATION]."
 

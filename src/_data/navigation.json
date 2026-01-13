@@ -4,7 +4,7 @@
     { "text": "About", "url": "/about/" },
     { "text": "Repeaters", "url": "/repeaters/" },
     { "text": "Nets", "url": "/nets/" },
-    { "text": "SkyWARN", "url": "/skywarn/" },
+    { "text": "SKYWARN", "url": "/skywarn/" },
     { "text": "Events", "url": "/events/" },
     { "text": "Resources", "url": "/resources/" }
   ],

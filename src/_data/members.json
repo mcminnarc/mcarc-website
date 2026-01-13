@@ -2,7 +2,7 @@
   "year": 2024,
   "officers": [
     { "position": "President", "name": "Mike Elkins", "callsign": "W1ELK" },
-    { "position": "Vice President", "name": "Kenny Kirksey", "callsign": "KN4FIH" },
+    { "position": "Vice President", "name": "Bobby Murphy", "callsign": "KG4EHH" },
     { "position": "Secretary", "name": "Chan Patrick", "callsign": "KN4PQT" },
     { "position": "Treasurer", "name": "Alicia Parham", "callsign": "KO4ZEC" }
   ],
@@ -16,11 +16,8 @@
     { "name": "Ginger", "callsign": "", "note": "Club Mascot" }
   ],
   "members": [
-    { "name": "Alicia Parham", "callsign": "KO4ZEC" },
     { "name": "Amy Elkins", "callsign": "KQ4LQW" },
     { "name": "Ashley Burchfield", "callsign": "KQ4PPN" },
-    { "name": "Bobby Murphy", "callsign": "W4BKX" },
-    { "name": "Chan Patrick", "callsign": "KN4PQT" },
     { "name": "Charlie Floyd", "callsign": "KO4ZEB" },
     { "name": "Chrystal Kern", "callsign": "KN4KPJ" },
     { "name": "Cliff Blackburn", "callsign": "W4TZD" },
@@ -31,6 +28,7 @@
     { "name": "Heidi Wallace", "callsign": "", "note": "In process" },
     { "name": "Herb Hoffman", "callsign": "KI4MJS" },
     { "name": "Jeanette Riddle", "callsign": "KK4ZTG" },
+    { "name": "Joe Knox", "callsign": "KQ4POG" },
     { "name": "John Boyd", "callsign": "KD4ZWU" },
     { "name": "Judy Baker", "callsign": "KO4WEU" },
     { "name": "Kenny Kirksey", "callsign": "KN4FIH" },
@@ -41,14 +39,12 @@
     { "name": "Madison Elkins", "callsign": "KQ4LSF" },
     { "name": "Mark Edmonds", "callsign": "KB1QVP" },
     { "name": "Matt Thayer", "callsign": "KO4IYW" },
-    { "name": "Mike Elkins", "callsign": "W1ELK" },
     { "name": "Mike Ray", "callsign": "KD4HZL" },
     { "name": "Mike Wilson", "callsign": "K4EJE" },
     { "name": "Mike York", "callsign": "KQ4CTA" },
     { "name": "Nathan Floyd", "callsign": "KO4ZDT" },
     { "name": "Nicholas Elkins", "callsign": "KK4QFH" },
     { "name": "Randy Sitzlar", "callsign": "KQ4POV" },
-    { "name": "Robert Murphy", "callsign": "W4BKX" },
     { "name": "Sarah Floyd", "callsign": "KQ4HOG" },
     { "name": "Sid Averett", "callsign": "KM4BBV" },
     { "name": "Steve Page", "callsign": "KO4TLF" },

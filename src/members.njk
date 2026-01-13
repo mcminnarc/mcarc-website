@@ -7,6 +7,27 @@ title: Club Members
 
 <p><em>Tip: Press Ctrl+F (Cmd+F on Mac) to search for a specific name or callsign.</em></p>
 
+<h2>Club Officers ({{ members.year }})</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Callsign</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for officer in members.officers %}
+    <tr>
+      <td><strong>{{ officer.position }}</strong></td>
+      <td>{{ officer.name }}</td>
+      <td class="callsign">{{ officer.callsign }}</td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+
 <h2>Lifetime Members</h2>
 
 <table>
