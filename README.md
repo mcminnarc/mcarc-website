@@ -103,11 +103,6 @@ Custom CSS is in `src/assets/css/style.css`. The design uses CSS custom properti
 
 Push to `main` branch triggers automatic deployment via GitHub Actions.
 
-## 📞 Contact
-
-- **Email:** mcminnradio@gmail.com
-- **Phone:** 423-506-0225
-- **Facebook:** [McMinn Amateur Radio](https://www.facebook.com/mcminnamateurradio)
 
 ## 📄 License
 
