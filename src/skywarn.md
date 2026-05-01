@@ -54,10 +54,10 @@ Contact the Morristown NWS office or check their website for upcoming training d
 
 ## Downloadable Resources
 
-- [SKYWARN Guidelines](/assets/documents/skywarn/guidelines.pdf)
-- [NCS Guidelines](/assets/documents/skywarn/NCS-Guidelines.pdf)
-- [Resource Quick Reference](/assets/documents/skywarn/Resource-Quick-Ref-5.pdf)
-- [SKYWARN Net Log](/assets/documents/skywarn/McMinn-Co-SKYWARN-Event-Log.docx)
+- [SKYWARN Guidelines](../assets/documents/skywarn/guidelines.pdf)
+- [NCS Guidelines](../assets/documents/skywarn/NCS-Guidelines.pdf)
+- [Resource Quick Reference](../assets/documents/skywarn/Resource-Quick-Ref-5.pdf)
+- [SKYWARN Net Log](../assets/documents/skywarn/McMinn-Co-SKYWARN-Event-Log.docx)
 
 ## External Resources
 
