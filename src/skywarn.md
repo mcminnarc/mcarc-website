@@ -57,10 +57,10 @@ Contact the Morristown NWS office or check their website for upcoming training d
 - [SKYWARN Guidelines](/assets/documents/skywarn/guidelines.pdf)
 - [NCS Guidelines](/assets/documents/skywarn/NCS-Guidelines.pdf)
 - [Resource Quick Reference](/assets/documents/skywarn/Resource-Quick-Ref-5.pdf)
-- [SKYWARN Net Log](/assets/documents/skywarn/Skywarn-Net-Log-1.pdf)
+- [SKYWARN Net Log](/assets/documents/skywarn/McMinn-Co-SKYWARN-Event-Log.docx)
 
 ## External Resources
 
 - [National Weather Service - Morristown](https://www.weather.gov/mrx/)
 - [SKYWARN Program Information](https://www.weather.gov/skywarn/)
-- [Become a Storm Spotter](https://www.weather.gov/skywarn/spotter-training)
+- [NWS Morristown Virtual SKYWARN Spotter Training](https://storymaps.arcgis.com/collections/bd6cffba42de4339981758cecc110e36)

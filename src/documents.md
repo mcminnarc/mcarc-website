@@ -26,7 +26,7 @@ Resources and documents for club members and amateur radio operators.
 - [SKYWARN Guidelines](/assets/documents/skywarn/guidelines.pdf)
 - [NCS Guidelines](/assets/documents/skywarn/NCS-Guidelines.pdf)
 - [Resource Quick Reference](/assets/documents/skywarn/Resource-Quick-Ref-5.pdf)
-- [SKYWARN Net Log](/assets/documents/skywarn/Skywarn-Net-Log-1.pdf)
+- [SKYWARN Net Log](/assets/documents/skywarn/McMinn-Co-SKYWARN-Event-Log.docx)
 
 ---
 
