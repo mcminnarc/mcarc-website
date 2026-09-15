@@ -355,8 +355,6 @@ main {
   height: auto;
   margin: 0 auto var(--space-6);
   display: block;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
 }
 
 .hero h1 {
