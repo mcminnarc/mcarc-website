@@ -143,3 +143,10 @@ title: Home
   Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
   <a href="{{ site.facebook }}" target="_blank" rel="noopener">Follow us on Facebook</a>
 </p>
+<p>
+  Mailing Address:<br>
+  {{ site.name }}<br>
+  {{ site.mailingAddress.line1 }}<br>
+  {{ site.mailingAddress.line2 }}<br>
+  {{ site.mailingAddress.city }}, {{ site.mailingAddress.state }} {{ site.mailingAddress.zip }}
+</p>

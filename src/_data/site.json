@@ -9,6 +9,13 @@
   "contact": "Mike Elkins",
   "facebook": "https://www.facebook.com/mcminnamateurradio",
   "mailingList": "http://eepurl.com/Jx7Qv",
+  "mailingAddress": {
+    "line1": "PMB 215",
+    "line2": "1306 Decatur Pike",
+    "city": "Athens",
+    "state": "TN",
+    "zip": "37303"
+  },
   "meeting": {
     "day": "2nd Monday",
     "time": "7:00 PM",
