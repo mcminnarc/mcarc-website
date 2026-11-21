@@ -26,7 +26,15 @@ Send your item information to [kg4fzr@yahoo.com](mailto:kg4fzr@yahoo.com) includ
 
 ## Current Listings
 
-*Check back for current listings, or contact us to list your items.*
+### For Sale: Ameritron AL-811 Amplifier — $500
+
+*Posted November 20, 2026*
+
+One Ameritron AL-811 amplifier for sale. This amp has been completely serviced and updated. Comes with extra power tubes.
+
+**Contact:** Bob Miller, KC4KUZ — Athens, TN<br>
+**Phone:** [423-453-0269](tel:+14234530269)<br>
+**Email:** [kc4kuz1@comcast.net](mailto:kc4kuz1@comcast.net)
 
 ---
 
