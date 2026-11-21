@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: September 2026 Meeting Minutes
-date: 2026-09-08
+date: 2026-09-14
 tags: minutes
 ---
 

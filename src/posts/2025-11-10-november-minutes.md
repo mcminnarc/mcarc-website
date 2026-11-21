@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: November 2025 Meeting Minutes
-date: 2025-11-12
+date: 2025-11-10
 tags: minutes
 ---
 
